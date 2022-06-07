@@ -1,0 +1,43 @@
+users
+CREATE TABLE users (
+    id int NOT null AUTO_INCREMENT,
+    email varchar(255),
+    username varchar(255),
+    password varchar(255),
+    verified int(255),
+    token varchar(255),
+    PRIMARY KEY (id)
+    );
+    CREATE TABLE admins (
+    id int NOT null AUTO_INCREMENT,
+    email varchar(255),
+    username varchar(255),
+    password varchar(255),
+    verified int(255),
+    token varchar(255),
+    PRIMARY KEY (id)
+    );
+
+
+    CREATE TABLE deposit (
+    id int NOT null AUTO_INCREMENT,
+    txid text(255),
+    confirm_img text(255),
+    date_created datetime,
+
+    PRIMARY KEY (id)
+    );
+      CREATE TABLE amount (
+    id int NOT null AUTO_INCREMENT,
+    amount text(255),
+    user_id text(255),
+    user_id crypto(255),
+    PRIMARY KEY (id)
+    );
+     CREATE TABLE category (
+    id int NOT null AUTO_INCREMENT,
+    BTC varchar(255),
+    ETH varchar(255),
+    BNB varchar(255),
+     PRIMARY KEY (id)
+    );
